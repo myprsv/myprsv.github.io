@@ -1,0 +1,145 @@
+.nav-bar{
+    display: flex;
+}
+.nav-bar ul li {
+
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    /*margin: 0 20px;*/
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    height: 45px ;
+    position: sticky;
+}
+.nav-bg-hdark{
+    background-color: #ccc;
+}
+.nav-round{
+    border-radius: 10px !important; ;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    /* padding: 15px; */
+    transition: color 0.3s ease;
+    font-size: 128%;
+}
+/* .nav-list{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    background-color: aqua;
+} */
+.nav-brand{
+    font-size: 130%;
+    font-weight: bold;
+}
+.nav-hide{
+    visibility: hidden!important;
+}
+.nav-show{
+    visibility: visible!important;
+}
+.drop-nav{
+width: 100%;
+display: flex;
+}
+.logo{
+    width: 80%;
+}
+.drop-nav-menu{
+        display: flex;
+    width: 20%;
+    height: 40px;
+    cursor: pointer;
+}
+.deCol{
+    background-color: red;
+}
+.reDeCol{
+
+    background-color: green;
+}
+@keyframes sidenav{
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+/* Styling cho các dòng */
+.line {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styling cho khung chứa các dòng */
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Khi bấm vào và có class active */
+.menu-icon.active .line1 {
+    transform: translateY(10px) rotate(45deg); /* Xoay và dịch dòng đầu tiên */
+}
+
+.menu-icon.active .line2 {
+    opacity: 0; /* Ẩn dòng thứ hai */
+}
+
+.menu-icon.active .line3 {
+    transform: translateY(-10px) rotate(-45deg); /* Xoay và dịch dòng thứ ba */
+}
+
+/* .bordery.active .line1{
+    /* animation-name: sidenav;
+    animation-duration: 3s;
+    animation-iteration-count: 1; 
+    transform: rotate(45deg) translateY(10px);
+}
+
+.bordery.active .line2{
+    opacity: 0;
+}
+
+.bordery.active .line3{
+    transform: rotate(-45deg) translateY(-10px);
+}
+.line{
+    padding-top: 1px;
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin: 7px -4px 7px 4px;
+    transition: transform 0.3s ease-in-out;
+}
+.bordery{
+    border: 1px solid black;
+    border-radius: 25%;
+    width: 40px;   Điều chỉnh kích thước phù hợp 
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;   Giữ các thanh cố định trong hộp 
+    cursor: pointer;
+} */
